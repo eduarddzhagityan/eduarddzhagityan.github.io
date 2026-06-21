@@ -17,9 +17,40 @@ body{
 }
 
 header{
-    background:#0f3d6e;
+    background:
+        linear-gradient(90deg, rgba(15,61,110,0.98) 0%, rgba(15,61,110,0.92) 45%, rgba(15,61,110,0.78) 100%),
+        radial-gradient(circle at 75% 18%, rgba(255,255,255,0.13), transparent 28%),
+        linear-gradient(135deg, #0f3d6e 0%, #082d55 100%);
     color:white;
     padding:35px 40px 45px 40px;
+    position:relative;
+    overflow:hidden;
+}
+
+header::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.05) 65%, transparent 100%),
+        repeating-linear-gradient(90deg, transparent 0 58px, rgba(255,255,255,0.04) 59px 60px),
+        repeating-linear-gradient(0deg, transparent 0 58px, rgba(255,255,255,0.035) 59px 60px);
+    opacity:0.45;
+    pointer-events:none;
+}
+
+header::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:0;
+    width:48%;
+    height:100%;
+    background:
+        radial-gradient(circle at 45% 24%, rgba(255,255,255,0.14), transparent 22%),
+        linear-gradient(135deg, rgba(120,200,255,0.15), transparent 55%);
+    opacity:0.75;
+    pointer-events:none;
 }
 
 .container{
@@ -38,9 +69,7 @@ header{
 
 .hero img{
     width:340px;
-    padding:8px;
-    background:#ffffff;
-    border-radius:18px;
+    border-radius:14px;
     box-shadow:0 12px 30px rgba(0,0,0,.30);
     z-index:1;
 }
@@ -61,6 +90,9 @@ header{
     font-size:32px;
     font-weight:600;
     margin-top:10px;
+    padding-bottom:14px;
+    border-bottom:1px solid rgba(255,255,255,0.55);
+    color:#8fd3ff;
     opacity:0.95;
 }
 
