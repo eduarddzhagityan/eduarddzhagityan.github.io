@@ -256,41 +256,54 @@ footer{
 /* ---------- Teaching page ---------- */
 
 .course-block{
-    display:flex;
-    gap:22px;
-    align-items:flex-start;
+    display:grid;
+    grid-template-columns:74px 1fr;
+    column-gap:24px;
+    align-items:start;
 
     background:#ffffff;
-
-    border:1px solid #dfe7f2;
-
-    border-radius:12px;
-
-    padding:24px 28px;
-
+    border:1px solid #d9e3ef;
+    border-radius:14px;
+    padding:26px 30px;
     margin:24px 0;
 
-    box-shadow:0 4px 14px rgba(0,0,0,.05);
-
-    transition:.25s ease;
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+    transition:all .25s ease;
 }
 
 .course-block:hover{
     transform:translateY(-2px);
-
     box-shadow:0 10px 24px rgba(0,0,0,.08);
 }
 
-.course-block h3{
-    margin:0 0 10px 0;
+.course-icon{
+    width:56px;
+    height:56px;
+    border-radius:14px;
 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#eef5fb;
     color:#123f73;
 
-    font-size:1.35rem;
+    font-size:32px;
+    line-height:1;
 }
 
-.course-block p{
-    margin:0;
+.course-content h3{
+    margin:0 0 10px 0;
+    padding-bottom:10px;
 
+    color:#123f73;
+    font-size:1.35rem;
+    line-height:1.3;
+
+    border-bottom:1px solid #d9e3ef;
+}
+
+.course-content p{
+    margin:0;
     line-height:1.8;
 }
