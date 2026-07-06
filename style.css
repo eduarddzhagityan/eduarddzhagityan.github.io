@@ -1,4 +1,190 @@
-/* Common site stylesheet */
-/* Eduard Dzhagityan Academic Website */
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fa;
+    color:#222;
+    line-height:1.7;
+}
 
-/* We will move shared CSS here step by step. */
+nav{
+    background:#2a5b8f;
+    padding:24px 40px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+    position:sticky;
+    top:0;
+    z-index:10;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#8fd3ff;
+}
+
+header{
+    background:
+    linear-gradient(90deg, rgba(15,61,110,0.98) 0%, rgba(15,61,110,0.95) 100%),
+    radial-gradient(circle at 75% 18%, rgba(255,255,255,0.08), transparent 28%),
+    linear-gradient(135deg, #0f3d6e 0%, #082d55 100%);
+    color:white;
+    padding:35px 40px 45px 40px;
+    position:relative;
+    overflow:hidden;
+}
+
+.container{
+    max-width:1320px;
+    margin:auto;
+}
+
+.hero{
+    display:flex;
+    align-items:flex-start;
+    gap:56px;
+    flex-wrap:wrap;
+    position:relative;
+    margin-top:20px;
+}
+
+.hero img{
+    width:300px;
+    border-radius:14px;
+    box-shadow:0 12px 30px rgba(0,0,0,.30);
+    z-index:1;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h1{
+    margin:0;
+    font-size:34px;
+    line-height:1.15;
+    font-weight:700;
+}
+
+.hero-text h1 .degrees{
+    display:block;
+    font-size:18px;
+    font-weight:600;
+    margin-top:8px;
+    padding-bottom:10px;
+    border-bottom:1px solid rgba(255,255,255,0.55);
+    color:#8fd3ff;
+    opacity:0.95;
+}
+
+.hero-text p{
+    font-size:16px;
+    margin-bottom:14px;
+    line-height:1.6;
+}
+
+.hero-highlights{
+    display:grid;
+    grid-template-columns:1.1fr 1.9fr;
+    gap:38px;
+    margin-top:38px;
+    font-size:15px;
+    line-height:1.55;
+    align-items:start;
+}
+
+.hero-highlights strong{
+    font-size:18px;
+    display:block;
+    margin-bottom:8px;
+}
+
+.academic-profiles{
+    width:100%;
+    max-width:1000px;
+    margin:40px auto 0 auto;
+    padding-top:12px;
+    text-align:left;
+    background:none;
+    border:none;
+    box-shadow:none;
+    border-top:1px solid rgba(255,255,255,0.25);
+}
+
+.academic-profiles strong{
+    display:block;
+    font-family:Georgia, serif;
+    font-size:22px;
+    font-weight:500;
+    margin-bottom:8px;
+    color:white;
+}
+
+.academic-profiles a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.academic-profiles a:hover{
+    text-decoration:underline;
+}
+
+.buttons{
+    margin-top:25px;
+}
+
+.button{
+    display:inline-block;
+    margin-right:10px;
+    margin-bottom:10px;
+    padding:12px 20px;
+    background:white;
+    color:#0f3d6e;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 30px;
+}
+
+h2{
+    color:#0f3d6e;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+ul{
+    padding-left:20px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#0f3d6e;
+    color:white;
+}
