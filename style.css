@@ -277,8 +277,8 @@ footer{
 }
 
 .course-icon{
-    width:56px;
-    height:56px;
+    width:64px;
+    height:64px;
     border-radius:14px;
 
     display:flex;
@@ -286,10 +286,12 @@ footer{
     justify-content:center;
 
     background:#eef5fb;
-    color:#123f73;
+}
 
-    font-size:32px;
-    line-height:1;
+.course-icon img{
+    width:42px;
+    height:42px;
+    display:block;
 }
 
 .course-content h3{
