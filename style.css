@@ -333,23 +333,26 @@ footer{
 /* ---------- Website Notice ---------- */
 
 .site-notice{
+    display:inline-block;
+
     background:#fff8e5;
     border:1px solid #e3c76d;
-    border-left:5px solid #c89b1f;
+    border-left:4px solid #c89b1f;
 
-    border-radius:10px;
+    border-radius:8px;
 
-    padding:14px 18px;
+    padding:8px 12px;
 
-    margin:0 0 24px 0;
+    margin:10px 0 18px 0;
 
     color:#4b3b00;
 
-    font-size:.95rem;
+    font-size:.88rem;
 
-    line-height:1.6;
+    line-height:1.45;
+
+    max-width:720px;
 }
-
 .site-notice strong{
     color:#8a5c00;
 }
