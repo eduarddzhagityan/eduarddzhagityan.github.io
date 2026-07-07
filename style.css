@@ -319,6 +319,25 @@ footer{
     color:#2f3b4a;
     text-wrap:pretty;
 }
+
+.course-topics{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 12px;
+    margin-top:14px;
+}
+
+.topic-tag{
+    display:inline-block;
+    padding:6px 14px;
+    background:#eef5fb;
+    border:1px solid #c9d9ec;
+    border-radius:8px;
+    color:#0f3d6e;
+    font-size:.95rem;
+    font-weight:600;
+    line-height:1.35;
+}
 /* ---------- Website Notice ---------- */
 
 .site-notice{
