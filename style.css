@@ -289,10 +289,18 @@ footer{
     background:#eef5fb;
 }
 
-.course-icon img{
-    width:56px;
-    height:56px;
+.course-icon svg{
+    width:38px;
+    height:38px;
     display:block;
+}
+
+.course-icon svg *{
+    fill:none;
+    stroke:#0f3d6e;
+    stroke-width:1.8;
+    stroke-linecap:round;
+    stroke-linejoin:round;
 }
 
 .course-content h3{
