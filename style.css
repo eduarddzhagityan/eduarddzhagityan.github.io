@@ -278,9 +278,9 @@ footer{
 }
 
 .course-icon{
-    width:64px;
-    height:64px;
-    border-radius:14px;
+    width:54px;
+    height:54px;
+    border-radius:12px;
 
     display:flex;
     align-items:center;
