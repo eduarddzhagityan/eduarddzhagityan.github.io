@@ -315,7 +315,9 @@ footer{
 
 .course-content p{
     margin:0;
-    line-height:1.8;
+    line-height:1.9;
+    color:#2f3b4a;
+    text-wrap:pretty;
 }
 /* ---------- Website Notice ---------- */
 
