@@ -263,12 +263,12 @@ footer{
     align-items:start;
 
     background:#ffffff;
-    border:1px solid #d9e3ef;
+    border:2px solid #9fb8d8;
     border-radius:14px;
     padding:26px 30px;
     margin:24px 0;
 
-    box-shadow:0 4px 12px rgba(0,0,0,.05);
+    box-shadow:0 6px 16px rgba(15,61,110,.08);
     transition:all .25s ease;
 }
 .course-block:hover{
