@@ -258,8 +258,8 @@ footer{
 
 .course-block{
     display:grid;
-    grid-template-columns:74px 1fr;
-    column-gap:24px;
+    grid-template-columns:58px 1fr;
+    column-gap:20px;
     align-items:start;
 
     background:#ffffff;
@@ -271,7 +271,6 @@ footer{
     box-shadow:0 4px 12px rgba(0,0,0,.05);
     transition:all .25s ease;
 }
-
 .course-block:hover{
     transform:translateY(-2px);
     box-shadow:0 10px 24px rgba(0,0,0,.08);
