@@ -384,3 +384,31 @@ footer{
 .site-notice strong{
     color:#8a5c00;
 }
+
+/* ---------- Publications page ---------- */
+
+.publication{
+    border-left:4px solid #2a5b8f;
+    padding-left:18px;
+    margin-top:22px;
+    margin-bottom:22px;
+}
+
+.publication h3{
+    color:#0f3d6e;
+    font-size:20px;
+    margin-top:28px;
+    margin-bottom:6px;
+}
+
+.publication p{
+    margin-top:6px;
+}
+
+.note{
+    background:#f5f7fa;
+    border:1px solid #d7dce5;
+    border-radius:12px;
+    padding:22px;
+    margin-top:35px;
+}
