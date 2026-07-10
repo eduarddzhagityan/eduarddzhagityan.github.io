@@ -388,10 +388,18 @@ footer{
 /* ---------- Publications page ---------- */
 
 .publication{
-    border-left:4px solid #2a5b8f;
-    padding-left:18px;
-    margin-top:22px;
-    margin-bottom:22px;
+    background:#ffffff;
+    border:2px solid #9fb8d8;
+    border-radius:14px;
+    padding:22px 30px;
+    margin:22px 0;
+    box-shadow:0 6px 16px rgba(15,61,110,.08);
+    transition:all .25s ease;
+}
+
+.publication:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px rgba(0,0,0,.08);
 }
 
 .publication h3{
