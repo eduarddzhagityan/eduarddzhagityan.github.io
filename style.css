@@ -395,7 +395,8 @@ footer{
     border:2px solid #9fb8d8;
     border-radius:14px;
     padding:22px 30px;
-    margin:22px 0 22px 56px;
+    margin:22px 0 22px 42px;
+    max-width:1120px;
     box-shadow:0 6px 16px rgba(15,61,110,.08);
     transition:all .25s ease;
 }
