@@ -422,6 +422,14 @@ footer{
     color:#2f3b4a;
 }
 
+@media (max-width:700px){
+    .publication{
+        margin:18px 0;
+        width:100%;
+        padding:20px;
+    }
+}
+
 .note{
     background:#f5f7fa;
     border:1px solid #d7dce5;
