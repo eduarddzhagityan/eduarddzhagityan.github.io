@@ -432,8 +432,11 @@ footer{
     .publication h3{
         font-size:1.15rem;
     }
-}
 
+    .publication p{
+        font-size:1rem;
+    }
+}
 .note{
     background:#f5f7fa;
     border:1px solid #d7dce5;
