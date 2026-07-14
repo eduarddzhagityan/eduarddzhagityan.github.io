@@ -206,8 +206,7 @@ h3{
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    column-gap:30px;
-    row-gap:38px;
+    gap:30px;
 }
     margin-top:25px;
     margin-bottom:35px;
