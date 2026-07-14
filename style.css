@@ -429,10 +429,10 @@ footer{
         padding:20px;
     }
 
-    .publication h3{
+        .publication h3{
         font-size:1.15rem;
+        overflow-wrap:anywhere;
     }
-
     .publication p{
         font-size:1rem;
     }
