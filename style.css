@@ -133,13 +133,16 @@ header{
 }
 
 .academic-profiles a{
-    color:white;
-    text-decoration:none;
-    font-weight:500;
+    color:#8fd3ff;
+    text-decoration:underline;
+    text-decoration-thickness:1px;
+    text-underline-offset:3px;
+    font-weight:600;
+    transition:color .2s ease;
 }
 
 .academic-profiles a:hover{
-    text-decoration:underline;
+    color:#ffffff;
 }
 
 .buttons{
