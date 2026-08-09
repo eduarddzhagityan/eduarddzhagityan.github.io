@@ -454,3 +454,87 @@ footer{
     padding:22px;
     margin-top:35px;
 }
+
+/* Research Notes */
+
+.intro-note{
+    margin:28px 0 38px;
+    padding:28px 32px;
+    background:#f5f8fc;
+    border-left:4px solid #2f6598;
+    border-radius:4px;
+}
+
+.intro-note h3{
+    margin:0 0 16px;
+    color:#123f6d;
+    font-size:24px;
+    line-height:1.4;
+}
+
+.intro-note p{
+    margin:0 0 14px;
+}
+
+.intro-note p:last-child{
+    margin-bottom:0;
+}
+
+.notes-subheading{
+    margin:0 0 18px;
+    color:#123f6d;
+    font-size:23px;
+}
+
+.research-notes-list{
+    width:100%;
+}
+
+.research-note-item{
+    display:grid;
+    grid-template-columns:190px 1fr;
+    gap:32px;
+    padding:24px 0 28px;
+    border-bottom:1px solid #d9e0e7;
+}
+
+.research-note-item:first-child{
+    border-top:1px solid #d9e0e7;
+}
+
+.research-note-date{
+    color:#526b86;
+    font-size:16px;
+    padding-top:2px;
+}
+
+.research-note-content h3{
+    margin:0 0 10px;
+    color:#123f6d;
+    font-size:21px;
+    line-height:1.4;
+}
+
+.research-note-content p{
+    margin:0 0 12px;
+}
+
+.research-note-link{
+    font-weight:600;
+    text-decoration:none;
+}
+
+.research-note-link:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:700px){
+    .research-note-item{
+        grid-template-columns:1fr;
+        gap:8px;
+    }
+
+    .intro-note{
+        padding:22px;
+    }
+}
