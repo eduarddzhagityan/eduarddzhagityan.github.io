@@ -528,6 +528,11 @@ footer{
     text-decoration:underline;
 }
 
+.research-note-separator{
+    color:#8392a3;
+    margin:0 9px;
+}
+
 @media(max-width:700px){
     .research-note-item{
         grid-template-columns:1fr;
