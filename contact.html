@@ -159,7 +159,7 @@ For professional inquiries, please use the contact form below.
 
 <div class="contact-box">
 
-<form action="https://formspree.io/f/xdarzdln" method="POST">
+<form id="contact-form">
 
 <div style="display:none;">
     <label>
@@ -189,6 +189,7 @@ For professional inquiries, please use the contact form below.
 </div>
 
 <button class="button" type="submit">Send Message</button>
+<p id="form-status" role="status"></p>
 
 </form>
 
@@ -229,5 +230,52 @@ Connect on LinkedIn
 © Eduard P. Dzhagityan
 </footer>
 
+<script>
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const button = form.querySelector('button[type="submit"]');
+  button.disabled = true;
+  button.textContent = "Sending...";
+  status.textContent = "";
+
+  try {
+    const data = new FormData(form);
+    const response = await fetch(
+      "https://contact-verification.dzhagityan.workers.dev/submit",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.get("name").trim(),
+          email: data.get("email").trim(),
+          subject: data.get("subject").trim(),
+          message: data.get("message").trim()
+        })
+      }
+    );
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.error || "Unable to send the message.");
+    }
+
+    form.reset();
+    status.textContent =
+      "Please check your email and click the confirmation link to send your message.";
+  } catch (error) {
+    status.textContent =
+      "The message could not be sent. Please try again.";
+  } finally {
+    button.disabled = false;
+    button.textContent = "Send Message";
+  }
+});
+</script>
+    
 </body>
 </html>
